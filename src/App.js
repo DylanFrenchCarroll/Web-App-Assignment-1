@@ -1,28 +1,29 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import NewsList from './components/newsList/';
+import Form from './components/newsForm/';
+import api from './dataStore/stubAPI';
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
-    );
-  }
+export default class App extends Component {    
+    render() {
+        let posts =  api.getAll();
+        return (
+            <div className="jumbotron">
+            <div className="container-fluid">
+            <div className="row">
+                <div className="col-md-6 offset-3">
+                    <h1><a href="/">Hacker News</a></h1>
+                </div>
+            </div>
+            <div className="row">
+                <div className="col-md-4 ">
+                    <Form />
+                </div>
+                <div className="col-md-8">
+                    <NewsList posts={posts} />
+                </div>
+            </div>  
+        </div>  
+        </div>  
+        );
+    }
 }
-
-export default App;
