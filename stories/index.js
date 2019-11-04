@@ -6,6 +6,10 @@ import NewsList from '../src/components/newsList';
 import NewsItem from '../src/components/newsItem';
 import NewsList from '../src/components/newsList';
 import { action } from "@storybook/addon-actions";
+import CommentForm from "../src/components/commentForm";
+import Comment from "../src/components/comment";
+import CommentList from "../src/components/commentList";
+
 
 
 
@@ -26,6 +30,33 @@ const post2 = {
     comments : [],
     upvotes: 20
 };
+
+storiesOf("Hacker App/Comment page/Comment Form", module).add("default", () => (
+    <CommentForm post={post} addCommentHandler={action("comment added")} />
+  ));
+  
+  const comment = {
+    id: 1,
+    author: "Joe Bloggs",
+    comment: "I agree with .....",
+    upvotes: 10
+  };
+  
+  storiesOf("Hacker App/Comment page/Comment", module).add("default", () => (
+    <Comment upvoteHandler={action("upvoted")} comment={comment} />
+  ));
+  
+  storiesOf("Hacker App/Comment page/Comment list", module).add("default", () => {
+    const defaultComments = [
+      comment,
+      { ...comment, author: "Jane Smith", upvotes: 3, id: 2 },
+      { ...comment, comment: "On the other hand", id: 3 },
+      { ...comment, author: "Jill Dwyer", upvotes: 5, id: 4 }
+    ];
+    return (
+      <CommentList upvoteHandler={action("upvoted")} comments={defaultComments} />
+    );
+  });
 
 storiesOf("Hacker App/News Form", module).add("default", () => <NewsForm />);
 
@@ -52,3 +83,6 @@ storiesOf('Hacker App/News List', module)
             { ...post, id: 4, title: 'Post 4', upvotes: 40 }
         ];
     return <NewsList posts= { defaultPosts }  />
+});
+
+
