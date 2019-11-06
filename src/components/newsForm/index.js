@@ -14,7 +14,7 @@ export default class Form extends Component {
 render() {
   return (
    <form   className="form bg-dark text-light">
-       <h3>Add a news item</h3>
+       <h3>Add your favourite song</h3>
        <div className="form-group">
            <input type="text"
                className="form-control"
@@ -25,14 +25,14 @@ render() {
        <div className="form-group">
            <input type="text"
                className="form-control"
-               placeholder="Author"
+               placeholder="Genre"
                value={this.state.author}
                onChange={ this.handleAuthorChange } />
        </div>
        <div className="form-group">
            <input type="text"
            className="form-control"
-           placeholder="Link"
+           placeholder="Youtube Link"
            value={this.state.link}
            onChange={ this.handleLinkChange } />
        </div>
