@@ -1,6 +1,10 @@
 .form {
+    position: relative;
     margin-top: 30px; 
     padding: 10px;
+    background-color: rgb(86, 87, 88);
+    float: right;
+    height: 100%;
 }
 .ptr {
     cursor: pointer;

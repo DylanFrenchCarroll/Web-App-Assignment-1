@@ -19,6 +19,7 @@ class StubAPI {
             comments: [],
             upvotes: 14
         }
+
         ];
     }
 

@@ -6,19 +6,40 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(52, 58, 64);
+
+  
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+    background-color: rgb(52, 58, 64);
+
 }
 
 h1 {
-  color: red;
+  color: rgb(29, 29, 29);
+  background-color: rgb(52, 58, 64);
+
 }
 
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  background-color: rgb(52, 58, 64);
+
 }
+.body{
+  background-color: rgb(52, 58, 64);
+  color: black;
+  background-color: rgb(52, 58, 64);
+
+}
+.h2{
+  text-align: left;
+  background-color: rgb(52, 58, 64);
+  color: black;
+}
+

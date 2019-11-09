@@ -21,7 +21,7 @@ export default class NewsList extends Component {
       return (<Fragment>{items}
       
       <span className="ptr" onClick={this.handleVote}>
-        <FontAwesomeIcon icon={["fas", "thumbs-up"]} size="2x" />
+        <FontAwesomeIcon icon={["fas", "thumbs-up"]} size="1x" />
         </span>
 
       </Fragment>

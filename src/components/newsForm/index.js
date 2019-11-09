@@ -13,7 +13,7 @@ export default class Form extends Component {
 }
 render() {
   return (
-   <form   className="form bg-dark text-light">
+   <form   className="form">
        <h3>Add your favourite song</h3>
        <div className="form-group">
            <input type="text"

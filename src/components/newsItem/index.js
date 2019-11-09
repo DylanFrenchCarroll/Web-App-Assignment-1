@@ -14,7 +14,7 @@ export default class NewsItem extends Component {
         return (
             <Fragment>
                 <span className="ptr" >
-                    <FontAwesomeIcon icon={["fas", "thumbs-up"]} size="2x" />
+                    <FontAwesomeIcon icon={["fas", "thumbs-up"]} size="0.75x" />
                 {` ${this.props.post.upvotes}`}
                 </span>
                 <span className="newsitem">
@@ -23,7 +23,7 @@ export default class NewsItem extends Component {
                     <Link to={`/posts/${this.props.post.id}` }>Comments</Link> 
                      </span>
                 </span>
-                <p className="author">{this.props.post.author}</p>
+                <p className="author"> - {this.props.post.author}</p>
             </Fragment>
         );
     }
