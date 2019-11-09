@@ -1,14 +1,20 @@
 .App {
-  text-align: center;
+  text-align: right;
+  background-image: url("back.jpg");
+  background-size: 30px;
 }
 
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 40vmin;
+  background-image: url("back.jpg");
+  background-size: 30px;
+
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: rgb(21,32,43);
+
   min-height: 100vh;
   display: flex;
   flex-direction: column;

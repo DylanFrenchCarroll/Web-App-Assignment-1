@@ -19,7 +19,7 @@ export default class NewsItem extends Component {
                 </span>
                 <span className="newsitem">
                     {line}
-                    <span>
+                    <span className="">
                     <Link to={`/posts/${this.props.post.id}` }>Comments</Link> 
                      </span>
                 </span>

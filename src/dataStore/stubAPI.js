@@ -1,26 +1,11 @@
 import _ from "lodash";
 
+
+const fs = require('fs')
+
 class StubAPI {
     constructor() {
-        this.posts = [
-        {
-            id: 1,
-            title: "Why You Can No Longer Get Lost in the Crowd",
-            link: "https://www.nytimes.com/2019/04/17/opinion/data-privacy.html",
-            author: "Woodrow Hartzog",
-            comments: [],
-            upvotes: 10
-        },
-        {
-            id: 2,
-            title: "Samsung's folding phone breaks for reviewers",
-            link: "https://www.bbc.com/news/technology-47970788",
-            author: "Dave Lee",
-            comments: [],
-            upvotes: 14
-        }
-
-        ];
+        this.posts = require('./posts.json')
     }
 
     getAll() {

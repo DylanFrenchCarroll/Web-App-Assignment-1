@@ -17,14 +17,14 @@ const Router = (props) => {
           <div className="h2 row">
             <div className="h2 body">
               <h1>
-                <Link className= "h2"to="/">Dylan's playlist(Add your favourite song)</Link>
+                <Link className= "head"to="/">Dylan's playlist(Add your favourite song)</Link>
               </h1>
               
             </div>
           </div>
         </div>
 
-              <div className="h2">
+              <div className="help">
               <body>  
                 <Link to="/help">Help</Link>  
               </body>

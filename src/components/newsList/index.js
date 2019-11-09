@@ -6,11 +6,13 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 
 
+
 export default class NewsList extends Component {
   handleVote = () =>  this.props.upvoteHandler(this.props.post.id);
     
-  
+   
   render() {
+    
     let items = this.props.posts.map(
       (post,index) => 
           <NewsItem key={index} 
@@ -20,13 +22,15 @@ export default class NewsList extends Component {
       
       return (<Fragment>{items}
       
-      <span className="ptr" onClick={this.handleVote}>
+      <span className=" ptr" onClick={this.handleVote}>
         <FontAwesomeIcon icon={["fas", "thumbs-up"]} size="1x" />
         </span>
-
+        
       </Fragment>
         
         
       );
+      
       }
+      
   }
