@@ -13,17 +13,24 @@ export default class NewsItem extends Component {
         );
         return (
             <Fragment>
+                <div className="padding">
                 <span className="ptr" >
                     <FontAwesomeIcon icon={["fas", "thumbs-up"]} size="0.75x" />
                 {` ${this.props.post.upvotes}`}
                 </span>
+
+
                 <span className="newsitem">
-                    {line}
-                    <span className="">
-                    <Link to={`/posts/${this.props.post.id}` }>Comments</Link> 
-                     </span>
+                    {line}  
                 </span>
+
+                      
                 <p className="author"> - {this.props.post.author}</p>
+
+                <p className="comments">
+                    <Link to={`/posts/${this.props.post.id}` }>Comments</Link> 
+                </p>
+                </div>
             </Fragment>
         );
     }

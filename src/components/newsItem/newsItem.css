@@ -1,5 +1,5 @@
 .newsitem {
-    font-size: 19px;
+    font-size: 30px;
     color: white;
    
 }
@@ -23,6 +23,16 @@
     
 }
 a {
-    color: white;
+    color: rgb(255, 255, 255);
     width: 50px
+  }
+.comments{
+    font-size: 12px;
+    font-style: bold;
+    color: red;
+
+  }
+
+  .padding {
+      padding-top: 35px;
   }

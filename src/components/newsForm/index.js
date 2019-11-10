@@ -14,7 +14,10 @@ export default class Form extends Component {
 render() {
   return (
    <form   className="form">
+
        <h3>Add your favourite song</h3>
+
+
        <div className="form-group">
            <input type="text"
                className="form-control"
@@ -22,6 +25,8 @@ render() {
                value={this.state.title}
                onChange={ this.handleTitleChange } />
        </div>
+
+
        <div className="form-group">
            <input type="text"
                className="form-control"
@@ -29,6 +34,9 @@ render() {
                value={this.state.author}
                onChange={ this.handleAuthorChange } />
        </div>
+
+
+
        <div className="form-group">
            <input type="text"
            className="form-control"
@@ -36,8 +44,11 @@ render() {
            value={this.state.link}
            onChange={ this.handleLinkChange } />
        </div>
+
+       
        <button type="submit" className="btn btn-primary"
                 onClick={this.handleSubmit}>Add</button>
+
    </form>
    );
 }

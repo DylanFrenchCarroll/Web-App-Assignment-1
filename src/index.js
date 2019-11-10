@@ -9,7 +9,7 @@ import "./index.css";
 
 const Router = (props) => {
   return (
-    <div className="h2"> 
+    
     <BrowserRouter>
       <div className="h2 jumbotron ">
         <div className="h2 container-fluid ">
@@ -38,10 +38,12 @@ const Router = (props) => {
           
           <Redirect from="*" to="/" />
         </Switch>
+
+        
       </div>
     </BrowserRouter>
 
-    </div>
+   
   );
 };
 

@@ -1,7 +1,7 @@
 import _ from "lodash";
 
 
-const fs = require('fs')
+
 
 class StubAPI {
     constructor() {
@@ -12,13 +12,17 @@ class StubAPI {
         return this.posts;
     }
 
-    add(title, author, link) {
+    add(title, author, link)
+     {
         let id = 1;
         let last = _.last(this.posts);
         if (last) {
         id = last.id + 1;
         }
+
+        
         let len = this.posts.length;
+
         let newLen = this.posts.push({
         id,
         title,

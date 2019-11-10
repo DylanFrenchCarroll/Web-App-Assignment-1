@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import NewsList from './components/newsList/';
 import Form from './components/newsForm/';
 import api from './dataStore/stubAPI';
-import stubAPI from './dataStore/stubAPI';
+
 
 export default class App extends Component {    
 
@@ -23,11 +23,12 @@ export default class App extends Component {
         return (
             <div className="container-fluid">
               <div className="row">
-                <div className="col-md-4 ">
-                  <Form handleAdd={this.addNewsItem} />
-                </div>
+                
                 <div className="col-md-4">
                   <NewsList posts={posts} upvoteHandler={this.incrementUpvote} />
+                </div>
+                <div className="col-md-4 ">
+                  <Form handleAdd={this.addNewsItem} />
                 </div>
               </div>
             </div>
