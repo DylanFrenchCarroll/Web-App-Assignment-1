@@ -26,8 +26,8 @@ Here is the json folder that i pasted data into. I tried to get more CRUD workin
 running and express server and getting the app to send commands to that to delete data from the json folder. I also explained the flow of the app to request data for posts 
 and provided some JSON data i used. 
 
-![][./img/eerd.png]
-![][./img/DataModel.png]
+![](/img/eerd.png)
+![](/img/DataModel.png)
 
 
 ~~~
@@ -55,19 +55,19 @@ and provided some JSON data i used.
 
 >>Here is the main page, you can add posts here and once added can be viewed here. They are not persistent. 
 
-![][./img/main.png]
+![](./img/main.png)
 
 >> Here is a help page with some text.  
 
-![][./img/help.png]
+![](./img/help.png)
 
 >> This is my log in page which doesn't have any functions as of yet, because JS cannot write to my machine from the browser. 
 
-[./img/login.png] 
+![](./img/login.png) 
 
 >>> This is a comments page, you can add comments and view comments here, I just added one and it shows above the box
 
-[./img/comment.png] 
+![](./img/comment.png)
 
 
 ## Routing.
@@ -83,9 +83,9 @@ and provided some JSON data i used.
 
 . . . . . Include a screenshot of the fully expanded list of stories from the tool's UI (see below). Group the stories appropriately (e.g. Contact page group) . . . .
 
-![][./img/story1.png]
-![][./img/story2.png]
-![][./img/story3.png]
+![](./img/story1.png)
+![](./img/story2.png)
+![](./img/story3.png)
 
 . . . . (Optional) State any non-standard Storybook add-ons used and include a screenshot(s) to illustrate.
 
