@@ -74,23 +74,26 @@ and provided some JSON data i used.
 
 . . . . List each route supported by the app. For each one state the associated view and whether it's public/private (requires authentication) . . . . .
 
-- /articles (public)- displays all published articles - title and author only.
-- /articles/:id (private) - detail view of a particular article.
-+ /articles/:author:id - display all articles by a specific author.
-- etc
-- etc
+- http://localhost:3000/ (public)- displays all published posts - title, artist and link only.
+- http://localhost:3000/posts/x (public) - "x" is the post number. Detailed view of a particular post. Shows comments and can add comments here.
+- http://localhost:3000/help (public) - help page with some text
+- http://localhost:3000/login (public) - login/sign up page
 
 ## Storybook.
 
 . . . . . Include a screenshot of the fully expanded list of stories from the tool's UI (see below). Group the stories appropriately (e.g. Contact page group) . . . .
 
-![][stories]
+![][./img/story1.png]
+![][./img/story2.png]
+![][./img/story3.png]
 
 . . . . (Optional) State any non-standard Storybook add-ons used and include a screenshot(s) to illustrate.
 
 ## Backend (Optional).
 
-. . . . . Briefly explain any backend used by the app (e.g. JSON-server, Open API) . . . . . .  
+Instead of manually using the hardcoded data from the stubApi.js file, i put the data into a JSON file as the code is less smelly that way.
+At the moment the app only reads data from the JSON file as i could not get the express server to work with my project to allow more CRUD and authentication.
+Now the stubApi.js file just has functions that I still use instead of having data and functions. 
 
 ## Authentication (Optional).
 
@@ -100,7 +103,3 @@ and provided some JSON data i used.
 
 . . . . . State any non-standard aspects of React or other related technologies that you researched and applied in this assignment, other than those covered by the two previous sections . . . . .
 
-[model]: ./img/model.png
-[main]: ./img/main.png
-[detail]: ./img/detail.png
-[stories]: ./img/stories.png
