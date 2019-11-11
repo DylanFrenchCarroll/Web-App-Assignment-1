@@ -6,6 +6,7 @@ import App from "./App";
 import CommentPage from "./components/commentPage";
 import Help from "./components/Help.js";
 import "./index.css";
+import Login from "./components/login";
 
 const Router = (props) => {
   return (
@@ -29,11 +30,17 @@ const Router = (props) => {
                 <Link to="/help">Help</Link>  
               </body>
               </div>
+              <div className="help">
+              <body>  
+                <Link to="/login">LogIn/Sign Up</Link>  
+              </body>
+              </div>
           
 
         <Switch>
           <Route path="/posts/:post_id" component={CommentPage} />
           <Route path = "/help" component= {Help}  />
+          <Route path = "/login" component= {Login}  />
           <Route exact path="/" component={App} />
           
           <Redirect from="*" to="/" />

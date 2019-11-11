@@ -3,4 +3,13 @@
     text-align: center;
     color: white;
   }
+
+  .login{
+    float: center;
+    padding-left: 550px;
+    padding-right: 550px;
+    padding-top: 50px;
+    text-align: center;
+
+  }
   
