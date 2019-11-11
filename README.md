@@ -101,5 +101,6 @@ Now the stubApi.js file just has functions that I still use instead of having da
 
 ## Independent learning.
 
-. . . . . State any non-standard aspects of React or other related technologies that you researched and applied in this assignment, other than those covered by the two previous sections . . . . .
+I deployed my website using glitch so it is public and wont need to be ran locally if you choose. 
+Website address is: https://dylanfrenchcarroll-web-app-assignment-1.glitch.me/
 
